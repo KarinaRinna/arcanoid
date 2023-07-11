@@ -21,6 +21,9 @@ color_list = [(rnd(30, 256), rnd(30, 256), rnd(30, 256)) for i in range(10) for 
 pygame.init()
 sc = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
+pygame.display.set_caption('Arcanoid')    # имя приложения
+icon = pygame.image.load('icon.png')      # иконка
+pygame.display.set_icon(icon)
 # фон
 img = pygame.image.load('1.png').convert()
 
